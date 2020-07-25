@@ -1,0 +1,11 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $height := .Get "height" | default "auto"  }}
+{{/* Height can be one of: auto, min, med, max, full. */}}
+<a id="overview" class="td-offset-anchor"></a>
+<section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-{{ $height }}">
+    <div class="container text-center td-arrow-down">
+        <span class="h4 mb-0">
+            {{ .Inner | markdownify }}
+        </span>
+    </div>
+</section>
