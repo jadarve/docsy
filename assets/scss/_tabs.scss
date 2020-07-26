@@ -1,0 +1,14 @@
+.nav-item.nav-link {
+    font-weight: bold;
+}
+
+.nav-item.nav-link.active {
+    background: $primary
+}
+
+.tab-pane > .highlight {
+    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
